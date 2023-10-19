@@ -1,4 +1,4 @@
----------------------------------MySQL------------------------------------------
+# MySQL
 INICIAR CONSOLE
 
 Para iniciar o console MySQL, abra o terminal e digite:
