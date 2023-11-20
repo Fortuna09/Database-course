@@ -9,7 +9,7 @@ SGBDRs - Sistemas Gerenciadores de Bancos de Dados
 ----------------------------------------------------------------------------------------------------------
 Banco de dados podem ser: 
 
-  Relacional = Um banco de dados relacional é um tipo de sistema de gerenciamento de banco de dados (DBMS) que organiza e armazena dados em tabelas com estruturas relacionais. 
+  Relacional = Um banco de dados relacional é um tipo de sistema de gerenciamento de banco de dados (SGBDR) que organiza e armazena dados em tabelas com estruturas relacionais. 
 
   Não Relacional = Um banco de dados não relacional, muitas vezes chamado de banco de dados NoSQL (que significa "Not Only SQL" ou "Não Apenas SQL"), 
                    é um tipo de sistema de gerenciamento de banco de dados projetado para armazenar e gerenciar dados de maneira que não segue o modelo de banco de dados relacional tradicional. 
