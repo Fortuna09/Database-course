@@ -18,4 +18,15 @@ Banco de dados podem ser:
                    SQL, Key-Value e Document - estruturas de banco de dados nao relacionais 
 
 -----------------------------------------------------------------------------------------------------------
+Modelagem de dados:
 
+Modelagem conceitual:
+                    É o modelo de mais alto nível
+                    Pode ser elaborado de forma textual ou por meio de dois diagramas: Diagramade Entidade e Relacionamento e/ou Diagrama de Classes*.
+                    Tipos: Textual, Diagrama de Entidade e Relacionamento e Diagrama de Classes
+
+Modelagem Lógica:
+                    Descreve como os dados serão armazenados no banco de dados e também seus relacionamentos
+
+Modelagem Física:
+                    É a forma de modelagem da própria implementação no banco de dados
