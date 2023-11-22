@@ -122,5 +122,17 @@ Estabelece que todos os atributos não-chave (ou seja, aqueles que não fazem pa
 
     Agora foram criadas tabelas em que os atributos que não são chave primária, dependam apenas da chave primária ID de cada tabela.
 
+---
+### Terceira Forma Normal - 3FN
+
+Nenhuma coluna não chave deve depemder de outra coluna nao chave. Ou seja, devemmos eliminar os campos que podem ser obtidos pela equação de outros campos da mesma tabela.
+
+| N_pedido | Codigo_prod | Quant | Valor_Unit | Subtotal |
+|----------|----------------|---------|------------|-----------|
+| 1005 | 1-934 | 5 | 1.500,00 | 7.500,00 |
+| 1006 | 1-956 | 3 | 350,00 | 1.050,00 |
+| 1007 | 1-923 | 1 | 190,00 | 5.880,00 |
+
+
 
 
