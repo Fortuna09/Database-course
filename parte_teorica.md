@@ -127,12 +127,68 @@ Estabelece que todos os atributos não-chave (ou seja, aqueles que não fazem pa
 
 Nenhuma coluna não chave deve depemder de outra coluna nao chave. Ou seja, devemmos eliminar os campos que podem ser obtidos pela equação de outros campos da mesma tabela.
 
-| N_pedido | Codigo_prod | Quant | Valor_Unit | Subtotal |
+| N_pedido | Codigo_prod    | Quant   | Valor_Unit | Subtotal  | 
 |----------|----------------|---------|------------|-----------|
-| 1005 | 1-934 | 5 | 1.500,00 | 7.500,00 |
-| 1006 | 1-956 | 3 | 350,00 | 1.050,00 |
-| 1007 | 1-923 | 1 | 190,00 | 5.880,00 |
+| 1005     | 1-934          | 5       | 1.500,00   | 7.500,00  |
+| 1006     | 1-956          | 3       | 350,00     | 1.050,00  |
+| 1007     | 1-923          | 1       | 190,00     | 5.880,00  | 
+
+        ERRADO
+
+        Veja que se multiplicarmos a quantidade do produto pelo seu preço unitario teremos o subtotal. Portanto o campo subtotal é desnecessário e deve ser removido.
+
+---
+| N_pedido | Codigo_prod    | Quant   | Valor_Unit | 
+|----------|----------------|---------|------------|
+| 1005     | 1-934          | 5       | 1.500,00   | 
+| 1006     | 1-956          | 3       | 350,00     | 
+| 1007     | 1-923          | 1       | 190,00     |
+
+        CERTO 
+
+        Portanto temos uma tabela normalizada dentro das 3 formas normais.
+---
+| N_pedido | Codigo_prod    | Quant   |
+|----------|----------------|---------|
+| 1005     | 1-934          | 5       |
+| 1006     | 1-956          | 3       | 
+| 1007     | 1-923          | 1       | 
+
+        Atraves do codigo do produto nos temos acesso a todos os campos da tabela "Produtos", inclusive o nome do produto e seu valor unitario.
+
+#### Tabela Pedidos
+
+| N_pedido | Codigo_prod    | Quant   |  
+|----------|----------------|---------|
+| 1005     | 1-934          | 5       |
+| 1006     | 1-956          | 3       | 
+| 1007     | 1-923          | 1       | 
+
+#### Tabela Produtos
+
+| Produto  | Codigo_prod    | Valor_unit   |
+|----------|----------------|--------------|
+| X        | 1-934          | 1.500,00     | 
+| Y        | 1-956          | 350,00       | 
+| Z        | 1-923          | 190,00       | 
+
+        Agora sim esta correto com relaçao as 3 primeiras e principais formas normais que são mais usadas em banco de dados no geral. 
 
 
+---
 
+### Outras formas normais - 4FN e 5FN
 
+#### Quarta Forma Normal - 4FN
+
+A 4NF trata de dependências multivaloradas, que ocorrem quando um conjunto de colunas em uma tabela é funcionalmente dependente de outra coluna e, ao mesmo tempo, é independente de outras colunas. Para estar em conformidade com a 4NF, uma tabela deve estar na 3NF e não deve ter dependências multivaloradas.
+
+#### Quinta Forma Normal - 5FN
+
+A 5NF é projetada para lidar com dependências de junção, onde uma tabela pode ser decomposta em duas ou mais tabelas para eliminar redundâncias. A 5NF visa evitar dependências de junção não triviais, garantindo que não existam informações que possam ser derivadas de combinações de outras informações na mesma tabela.
+
+        No entando essas ultimas formas normais são refinamentos adicionais das formas normais anteriores e são aplicadas em casos mais específicos para garantir uma estrutura de banco de dados mais eficiente e livre de redundâncias. 
+
+---
+
+### Aqui está a teoria basica para a introdução de banco de dados.
