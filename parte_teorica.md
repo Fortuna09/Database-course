@@ -76,12 +76,12 @@ Ela estabelece que todas as colunas em uma tabela devem conter valores atômicos
 | ID | Nome                    | Disciplinas          |
 |----|-------------------------|----------------------|
 | 1  | João                    | Matemática, Física   |
-ERRADO
+    ERRADO
 
 | ID | Nome                    | Disciplinas         | Disciplinas       |
 |----|-------------------------|---------------------|-------------------|
 | 1  | João                    | Matemática          | Física            |
-CERTO
+    CERTO
 
     Cada célula da tabela deve conter um único valor, e esse valor deve ser indivisível. Isso significa que você não deve ter valores compostos ou estruturados em uma única célula.
 
@@ -95,8 +95,9 @@ Estabelece que todos os atributos não-chave (ou seja, aqueles que não fazem pa
 | 1  | Matemática  | Dr. Silva   | Exatas       |
 | 2  | Física      | Dr. Souza   | Ciencias     |
 | 3  | Matemática  | Dr. Almeida | Exatas       |
+    ERRADO
 
-    A chave primária é composta por duas colunas: ID e Curso. A 2NF requer que cada atributo não-chave seja totalmente dependente da chave primária. No entanto, a coluna Departamento depende apenas parcialmente da chave primária, pois o valor do departamento pode ser determinado apenas pelo curso, e não pelo ID.
+    A chave primária é composta por: ID. A 2NF requer que cada atributo não-chave seja totalmente dependente da chave primária. No entanto, a coluna Departamento tem dependencia apenas pelo curso, e não pelo ID.
 
 ##### Tabela Cursos
 | ID | Curso      |
@@ -117,5 +118,9 @@ Estabelece que todos os atributos não-chave (ou seja, aqueles que não fazem pa
 | 1  | 1          | Dr. Silva    |
 | 2  | 2          | Dr. Souza    |
 | 3  | 1          | Dr. Almeida  |
+    CERTO
+
+    Agora foram criadas tabelas em que os atributos que não são chave primária, dependam apenas da chave primária ID de cada tabela.
+
 
 
