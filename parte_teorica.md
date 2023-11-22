@@ -64,3 +64,58 @@ Modelagem Física:
 ![Alt text](Fotos/image.png)
 
 
+
+
+
+# Formas normais 
+
+### Primeira Forma Normal - 1NF
+
+Ela estabelece que todas as colunas em uma tabela devem conter valores atômicos e indivisíveis, e cada coluna deve ter um nome exclusivo. Além disso, a ordem em que os dados são armazenados não deve ter importância.
+
+| ID | Nome                    | Disciplinas          |
+|----|-------------------------|----------------------|
+| 1  | João                    | Matemática, Física   |
+ERRADO
+
+| ID | Nome                    | Disciplinas         | Disciplinas       |
+|----|-------------------------|---------------------|-------------------|
+| 1  | João                    | Matemática          | Física            |
+CERTO
+
+    Cada célula da tabela deve conter um único valor, e esse valor deve ser indivisível. Isso significa que você não deve ter valores compostos ou estruturados em uma única célula.
+
+---
+### Segunda Forma Normal - 2NF
+
+Estabelece que todos os atributos não-chave (ou seja, aqueles que não fazem parte de uma chave primária composta) devem ser totalmente dependentes da chave primária.
+
+| ID | Curso       | Professor   | Departamento |
+|----|-------------|-------------|--------------|
+| 1  | Matemática  | Dr. Silva   | Exatas       |
+| 2  | Física      | Dr. Souza   | Ciencias     |
+| 3  | Matemática  | Dr. Almeida | Exatas       |
+
+    A chave primária é composta por duas colunas: ID e Curso. A 2NF requer que cada atributo não-chave seja totalmente dependente da chave primária. No entanto, a coluna Departamento depende apenas parcialmente da chave primária, pois o valor do departamento pode ser determinado apenas pelo curso, e não pelo ID.
+
+##### Tabela Cursos
+| ID | Curso      |
+|----|------------|
+| 1  | Matemática |
+| 2  | Física     |
+
+##### Tabela Departamento
+|ID | id_curso   | Departamento |
+|---|------------|--------------|
+|1  | 1          | Exatas       |
+|2  | 2          | Ciencias     |
+
+##### Tabela Professor
+
+| ID | id_departam| Professor    |
+|----|------------|--------------|
+| 1  | 1          | Dr. Silva    |
+| 2  | 2          | Dr. Souza    |
+| 3  | 1          | Dr. Almeida  |
+
+
