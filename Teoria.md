@@ -38,7 +38,7 @@ SGBDRs - Sistemas Gerenciadores de Bancos de Dados
 
 # Modelagem de dados:
 
-Modelagem conceitual:
+#### Modelagem conceitual:
 
 É o modelo de mais alto nível 
 
@@ -49,14 +49,14 @@ Tipos: Textual, Diagrama de Entidade e Relacionamento e Diagrama de Classes
 ![Alt text](Fotos/5.png)
 ![Alt text](Fotos/6.png)
 
-Modelagem Lógica:
+#### Modelagem Lógica:
 
 Descreve como os dados serão armazenados no banco de dados e também seus relacionamentos
 
 ![Alt text](Fotos/7.png)
 ![Alt text](Fotos/8.png)
 
-Modelagem Física:
+#### Modelagem Física:
 
 É a forma de modelagem da própria implementação no banco de dados
 
