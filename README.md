@@ -5,7 +5,7 @@ Este repositório possui um resumo feito por mim sobre os conceitos basicos e es
 
 ## Teoria
 
--> Clique para acessar [Parte Teórica](/Database-course/Teoria.md)
+-> Clique para acessar [Parte Teórica](/Teoria.md)
 
 ## Sessão MySQL 
 
