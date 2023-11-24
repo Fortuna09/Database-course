@@ -1,4 +1,4 @@
--- create database secao03
+-- create database secao
 
 -- create table tipos_produto(
 	-- id serial PRIMARY KEY,
