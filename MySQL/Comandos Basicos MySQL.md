@@ -61,7 +61,7 @@ Para usar um banco de dados, digite:
                         USE nome_do_banco;
 
 ---------------------------------------------------------------------------------
-MOSTRAR TABLEAS
+MOSTRAR TABELAS
 
 Para mostrar todas as tabelas, digite:
                         SHOW TABLES;

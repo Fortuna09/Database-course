@@ -11,10 +11,6 @@ Este repositório possui um resumo feito por mim sobre os conceitos basicos e es
 
 ## Sessão MySQL 
 
--> Clique para acessar [Comandos Básicos do MySQL](/MySQL/Comandos%20Basicos%20MySQL.md)
-
-### Prática
-
 -> Clique para acessar [Funções de agregação](/MySQL/agregacao/05-funcoes-de-agregacao.sql)
 
 -> Clique para acessar [Agrupamento e ordenação](/MySQL/agrupamento/06-agrupamento-e-ordenacao.sql)
